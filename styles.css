@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+body {
+    background-color: #eee;   
+    min-width: 900px;
+}
+
+#header {
+    height: 70px;
+    width: 100%;
+
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5% 0;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar a {
+    font-size: 1.25rem;
+}
+
+.form-header {
+    font-size: 1.5rem;
+    font-weight: 700;    
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form input {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+form input[type="email"] {
+    padding: 0 3px;
+    line-height: 1.5rem;
+    min-width: 250px;
+    width: 17.5%;
+}
+
+form input[type="submit"] {
+    background-color: #f1c40f;
+    padding: 5px 15px;
+    font-weight: 900;
+}
+
+#features {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 60%;
+    margin: 5rem auto 0;
+    align-items: center;
+    column-gap: 20px;
+}
+
+#features div {
+    margin-bottom: 3rem;
+}
+
+.feature-header {
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 1rem 0;
+}
+
+#features img {
+    justify-self: center;
+    padding-top: 0;
+    align-self: flex-start;
+    padding-top: 1rem;
+}
+
+#video {
+    width: 30%;
+    display: block;
+    margin: 2rem auto;
+}
+
+#pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    margin: 2rem auto;
+    text-align: center;
+    column-gap: 16px;
+}
+
+.card {
+    border: 1px solid #000;
+    height: 250px;
+}
+
+.card-header {
+    background-color: #DDD;
+    line-height: 3rem;
+    font-weight: 600;
+}
+
+.card-price {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.card-description {
+    width: 100px;
+    padding: 0.5rem 0;
+    margin: auto;
+}
+
+button {
+    background-color: #f1c40f;
+    padding: 10px;
+    margin-top: 1rem;
+    font-size: 18px;
+    border: none;
+}
+
+button:hover, form input[type="submit"]:hover {
+    cursor: pointer;
+    transform: scale(.98);
+}
+
+#footer {
+    background-color: #ddd;
+    width: 60%;
+    margin: auto;
+    display: grid;
+    justify-content: end;
+}
+
+
+#footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+
+#footer a {
+    font-size: 1.1rem;
+}
+
+#footer p {
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    font-size: 0.8rem;
+    text-align: right;
+}
